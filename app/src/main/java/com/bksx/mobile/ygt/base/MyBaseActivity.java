@@ -13,9 +13,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bksx.mobile.ygt.R;
 import com.bksx.mobile.ygt.utils.DensityUtils;
 
+import bksx.com.soymilk.activity.BaseActivity;
+import bksx.com.soymilk.location.LocationService;
+import bksx.com.soymilk.permission.AppPermission;
+import bksx.com.soymilk.util.ToastUtil;
 
-public class BaseActivity extends AppCompatActivity {
+
+public class MyBaseActivity extends AppCompatActivity {
     private static boolean hasNavigationBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +30,11 @@ public class BaseActivity extends AppCompatActivity {
         fullScreen(this);
         setContentView(R.layout.activity_base);
 
+
         //StatusBarUtil.transparencyBar(this);
     }
+
+
 
     public static void fullScreen(Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

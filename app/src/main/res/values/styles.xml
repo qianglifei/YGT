@@ -18,4 +18,43 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="pop_layout">
+        <item name="android:layout_width">@dimen/dp_300</item>
+        <item name="android:layout_height">@dimen/dp_235</item>
+    </style>
+    <style name="pop_linearlayout_imageview">
+        <item name="android:layout_width">@dimen/dp_20</item>
+        <item name="android:layout_height">@dimen/dp_9</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dp_30</item>
+    </style>
+    <style name="pop_linearlayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@+id/jiao</item>
+        <item name="android:layout_width">@dimen/dp_200</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dp_7</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:weightSum">4</item>
+        <item name="android:background">@drawable/jiao_bg</item>
+    </style>
+    <style name="pop_linearkayout_textview">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@drawable/pop_textviewbg_selcetor</item>
+    </style>
+
+    <style name="pop_linearlayout_partingline">
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:background">#dcdcdc</item>
+    </style>
 </resources>

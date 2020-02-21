@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pop_layout">
+    <ImageView
+        android:id="@+id/jiao"
+        android:src="@mipmap/icon_jiao"
+        style="@style/pop_linearlayout_imageview" />
+
+    <LinearLayout style="@style/pop_linearlayout">
+        <TextView
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/textView_temporaryStorage"
+            android:text="全部"
+            style="@style/pop_linearkayout_textview"
+            />
+
+        <View style="@style/pop_linearlayout_partingline" />
+
+        <TextView
+            android:id="@+id/textView_DetailCollection"
+            android:text="任务"
+            style="@style/pop_linearkayout_textview"
+             />
+
+        <View style="@style/pop_linearlayout_partingline" />
+
+        <TextView
+            android:text="房屋"
+            android:id="@+id/textView_check"
+            style="@style/pop_linearkayout_textview"
+            />
+        <View style="@style/pop_linearlayout_partingline" />
+
+        <TextView
+            android:text="人口"
+            android:id="@+id/textView_population"
+            style="@style/pop_linearkayout_textview"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
